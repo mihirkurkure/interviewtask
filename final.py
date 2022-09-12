@@ -68,7 +68,7 @@ t_3d[mask] = t
 
 t_dist = sp.t(error)
 p = 1 - t_dist.cdf(t)
-print(p)
+print('P-values:', p)
 
 #to find correlation factor
 Y_mean = np.mean(Y)
