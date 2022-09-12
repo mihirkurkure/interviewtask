@@ -39,7 +39,7 @@ sigma = np.sum(e**2, axis = 0)/error
 c = c[:, None]
 #print('cshape', c)
 floor_t = c.T.dot(npl.pinv(X.T.dot(X))).dot(c)
-print('floor', floor_t)
+#print('floor', floor_t)
 
 t = ceil_t/np.sqrt(sigma*floor_t)
 #print(t.shape)
