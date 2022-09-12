@@ -63,7 +63,7 @@ c = np.array([1])
 c_f = c.dot(npl.pinv(X.T.dot(X))).dot(c)
 t = c.T.dot(beta_2)/np.sqrt(sigma_2 * c_f)
 
-t_3d = np.zeroes(y.shape[:3])
+t_3d = np.zeros(y.shape[:3])
 t_3d[mask] = t
 
 t_dist = sp.t(error)
